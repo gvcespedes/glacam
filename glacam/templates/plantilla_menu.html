@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'estilo.css'%}">
+        <h1>MENU</h1>
+    </head>
+    <body>
+        <!-- <table>
+            <tr>
+                <th colspan="3">CAFÉ</th>
+                <th></th>
+                <th>20 ml</th>
+                <th>40 ml</th>
+                <th>150 ml</th>
+                <th>200 ml</th>
+                <th>300 ml</th>
+            </tr>
+            {% for i in Con_sed.Café%}
+                <tr>
+                    <td colspan="3"><h4>{{i.0}}</h4></td>
+                    <td></td>
+                    <td>{{i.tamaños}}</td>
+                    <td>{{i.2}}</td>
+                    <td>{{i.3}}</td>
+                    <td>{{i.4}}</td>
+                    <td>{{i.5}}</td>
+                </tr>
+                <tr> 
+                    <td colspan="5">{{i.6}}</td>
+                </tr>
+            {% endfor %}
+        </table>-->
+
+
+<div class=contenedor_grande>
+    {% for i,j in Con_sed.Café.items %}
+    <div class=contenedor_elementos>
+        <div class=contenedor_detalles>
+            <p>{{i}}</p>
+            <p>{{j.descripción}}</p>
+        </div>
+        <div class=contenedor_precios>
+            {% for k,l in j.tamaños.items %}
+            <div class = contenedor_precio>
+                <p>{{k}}</p>
+                <p>{{l}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+</body>
+</html>

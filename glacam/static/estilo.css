@@ -1,0 +1,45 @@
+body {
+    background-color: #f8dbdb;
+}
+
+.contenedor_grande {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.contenedor_elementos {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    background-color: purple;
+    margin: 3%;
+}
+
+.contenedor_detalles {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.contenedor_precios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.contenedor_precio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.contenedor_precio p {
+    align-self: center;
+}
