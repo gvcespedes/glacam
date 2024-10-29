@@ -200,4 +200,4 @@ def vista_sobre_nosotros(request): #mi primera vista
     return HttpResponse("Estos somos")
 
 def vista_contacto(request): #mi primera vista
-    return HttpResponse("Conversemos")
+    return HttpResponse("Conversemoss")
